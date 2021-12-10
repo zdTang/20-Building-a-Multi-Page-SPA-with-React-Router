@@ -13,6 +13,7 @@ function App() {
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />
+        {/* Here to define the route format */}
         <Route path="/product-detail/:productId" element={<ProductDetail />} />
       </Routes>
     </div>

@@ -9,12 +9,13 @@ function App() {
     <div>
       <h2>App Component</h2>
       <MainHeader />
+      {/* In V6,We use Routes to replace Switch in V5 */}
       <Routes>
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />
         {/* Here to define the route format */}
-        <Route path="/product-detail/:productId" element={<ProductDetail />} />
+        <Route path="/products/:productId" element={<ProductDetail />} />
       </Routes>
     </div>
   );

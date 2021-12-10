@@ -7,3 +7,8 @@ https://reactrouter.com/docs/en/v6/getting-started/tutorial
 npm i react-router-dom
 
 ## NavLink's activeClassName doesn't work
+
+Max's router is V5  
+I am using V6  
+Here are differences between them.  
+https://dev.to/arunavamodak/react-router-v5-vs-v6-dp0

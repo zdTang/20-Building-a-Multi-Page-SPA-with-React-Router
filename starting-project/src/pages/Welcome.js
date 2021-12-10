@@ -1,5 +1,14 @@
+import { Outlet } from "react-router-dom";
+
 const Welcome = () => {
-  return <h1>The Welcome Page</h1>;
+  return (
+    <section>
+      <h1>Welcome</h1>
+      <div>
+        <Outlet />
+      </div>
+    </section>
+  );
 };
 
 export default Welcome;

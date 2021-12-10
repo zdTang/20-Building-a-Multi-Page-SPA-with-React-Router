@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Products from "./pages/Products";
 import About from "./pages/About";
@@ -11,6 +11,8 @@ function App() {
       <MainHeader />
       {/* In V6,We use Routes to replace Switch in V5 */}
       <Routes>
+        <Route path="/" element={<Navigate to="/welcome" />} />
+
         <Route path="/welcome" element={<Welcome />}>
           <Route
             path="/welcome/new-user"

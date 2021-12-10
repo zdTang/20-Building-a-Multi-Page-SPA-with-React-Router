@@ -3,6 +3,7 @@ import Welcome from "./pages/Welcome";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import MainHeader from "./components/MainHeader";
+import ProductDetail from "./pages/ProductDetail";
 function App() {
   return (
     <div>
@@ -12,6 +13,7 @@ function App() {
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />
+        <Route path="/product-detail/:productId" element={<ProductDetail />} />
       </Routes>
     </div>
   );
